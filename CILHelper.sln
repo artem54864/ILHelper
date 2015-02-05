@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CILHelper", "CILHelper\CILHelper.csproj", "{09983F02-B872-4DA9-8160-35F1F4B75EF5}"
 	ProjectSection(ProjectDependencies) = postProject
-		{4F78B930-778D-4684-9ACA-AC5BFC435635} = {4F78B930-778D-4684-9ACA-AC5BFC435635}
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024} = {007DE4B4-90C0-47F9-90D6-5CE230A9F024}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CILAnalyzer", "CILAnalyzer\CILAnalyzer.vcxproj", "{4F78B930-778D-4684-9ACA-AC5BFC435635}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CILAnalyzer", "CILAnalyzer\CILAnalyzer.vcxproj", "{007DE4B4-90C0-47F9-90D6-5CE230A9F024}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,16 +30,16 @@ Global
 		{09983F02-B872-4DA9-8160-35F1F4B75EF5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{09983F02-B872-4DA9-8160-35F1F4B75EF5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{09983F02-B872-4DA9-8160-35F1F4B75EF5}.Release|Win32.ActiveCfg = Release|Any CPU
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Debug|Mixed Platforms.Build.0 = Debug|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Debug|Win32.ActiveCfg = Debug|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Debug|Win32.Build.0 = Debug|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Release|Any CPU.ActiveCfg = Release|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Release|Mixed Platforms.ActiveCfg = Release|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Release|Mixed Platforms.Build.0 = Release|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Release|Win32.ActiveCfg = Release|Win32
-		{4F78B930-778D-4684-9ACA-AC5BFC435635}.Release|Win32.Build.0 = Release|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Debug|Win32.ActiveCfg = Debug|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Debug|Win32.Build.0 = Debug|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Release|Any CPU.ActiveCfg = Release|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Release|Win32.ActiveCfg = Release|Win32
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

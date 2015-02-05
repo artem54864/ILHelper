@@ -6,16 +6,13 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="General">
-      <UniqueIdentifier>{3abd1de3-4f51-400a-8e75-d505bf93743d}</UniqueIdentifier>
+      <UniqueIdentifier>{1f71f441-d014-49ca-a2d5-1c2ad9be9a56}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CILAnalyzer.h">
-      <Filter>General</Filter>
-    </ClInclude>
     <ClInclude Include="stdafx.h">
       <Filter>General</Filter>
     </ClInclude>
@@ -24,12 +21,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CILAnalyzer.cpp">
-      <Filter>General</Filter>
-    </ClCompile>
-    <ClCompile Include="dllmain.cpp">
-      <Filter>General</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>General</Filter>
     </ClCompile>
