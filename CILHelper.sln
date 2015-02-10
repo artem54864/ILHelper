@@ -16,6 +16,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StaticCppLib", "RnD\StaticC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCSharpApp", "RnD\TestCSharpApp\TestCSharpApp.csproj", "{B6D972F3-72FA-4249-90F0-1AE6AB454B42}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppBridge", "RnD\CppBridge\CppBridge.vcxproj", "{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{82684330-367F-4C01-A73A-0F01923AE2C0} = {82684330-367F-4C01-A73A-0F01923AE2C0}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +71,16 @@ Global
 		{B6D972F3-72FA-4249-90F0-1AE6AB454B42}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B6D972F3-72FA-4249-90F0-1AE6AB454B42}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B6D972F3-72FA-4249-90F0-1AE6AB454B42}.Release|Win32.ActiveCfg = Release|Any CPU
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Debug|Win32.Build.0 = Debug|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Release|Win32.ActiveCfg = Release|Win32
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,5 +88,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{82684330-367F-4C01-A73A-0F01923AE2C0} = {EEEFBC58-CCA2-4C2B-BA41-ECFE1309E5F5}
 		{B6D972F3-72FA-4249-90F0-1AE6AB454B42} = {EEEFBC58-CCA2-4C2B-BA41-ECFE1309E5F5}
+		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E} = {EEEFBC58-CCA2-4C2B-BA41-ECFE1309E5F5}
 	EndGlobalSection
 EndGlobal

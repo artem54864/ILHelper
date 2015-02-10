@@ -8,6 +8,9 @@
     <Filter Include="General">
       <UniqueIdentifier>{5b77e6bf-a1f3-4ccc-a032-62374cfd4952}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Inheritance">
+      <UniqueIdentifier>{a0390462-08ae-4050-866c-bdc997c9a8d6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -19,10 +22,22 @@
     <ClInclude Include="targetver.h">
       <Filter>General</Filter>
     </ClInclude>
+    <ClInclude Include="UMShape.h">
+      <Filter>Inheritance</Filter>
+    </ClInclude>
+    <ClInclude Include="UMCircle.h">
+      <Filter>Inheritance</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="UMShape.cpp">
+      <Filter>Inheritance</Filter>
+    </ClCompile>
+    <ClCompile Include="UMCircle.cpp">
+      <Filter>Inheritance</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
