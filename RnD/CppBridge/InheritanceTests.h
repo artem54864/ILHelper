@@ -9,7 +9,7 @@ namespace CppBridge {
 	public ref class InheritanceTests
 	{
 		UMShape *mShape = nullptr;
-
+	 
 	public:
 		InheritanceTests();
 		~InheritanceTests();

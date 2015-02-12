@@ -21,6 +21,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppBridge", "RnD\CppBridge\
 		{82684330-367F-4C01-A73A-0F01923AE2C0} = {82684330-367F-4C01-A73A-0F01923AE2C0}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CILLowLevel", "CILLowLevel\CILLowLevel.vcxproj", "{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{007DE4B4-90C0-47F9-90D6-5CE230A9F024} = {007DE4B4-90C0-47F9-90D6-5CE230A9F024}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +86,16 @@ Global
 		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Release|Win32.ActiveCfg = Release|Win32
 		{0CDCBD44-41CC-4B6F-B2A6-26FCD4964F5E}.Release|Win32.Build.0 = Release|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Debug|Win32.Build.0 = Debug|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Release|Win32.ActiveCfg = Release|Win32
+		{B704FC0C-6CE5-4BA1-AFBE-CBB5607E280E}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
