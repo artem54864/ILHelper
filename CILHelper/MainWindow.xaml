@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="500" Width="500">
     <Grid>
-        <Ribbon x:Name="IlHelperRibbon">
+        <Ribbon x:Name="Ribbon">
             <Ribbon.QuickAccessToolBar>
-                <RibbonQuickAccessToolBar>
+            <RibbonQuickAccessToolBar>
                     <RibbonButton x:Name="ButtonQ1"
                SmallImageSource="Resources/Images/Smallicon.png"
                Label="ButtonQ1" />
@@ -17,9 +17,9 @@
                Label="ButtonQ3" />
                 </RibbonQuickAccessToolBar>
             </Ribbon.QuickAccessToolBar>
-            
+
             <Ribbon.ApplicationMenu>
-                <RibbonApplicationMenu SmallImageSource="Resources/Images/SmallIcon.png" LargeImageSource="Resources/Images/Largeicon.png">
+            <RibbonApplicationMenu Label="ILHelper">
                     <RibbonApplicationMenuItem Header="New project.."
                        x:Name="NewProject"
                        ImageSource="Resources/Images/LargeIcon.png"/>
@@ -29,8 +29,9 @@
                     <RibbonApplicationMenuItem Header="Merge"
                        x:Name="Merge"
                        ImageSource="Resources/Images/LargeIcon.png"/>
-                    <RibbonApplicationMenuItem Header="Recent Projects..">
-                    </RibbonApplicationMenuItem> 
+                    <RibbonApplicationMenu Label="Recent Projects..">
+                        <RibbonApplicationMenuItem Header="Project 1"></RibbonApplicationMenuItem>
+                    </RibbonApplicationMenu> 
                     <RibbonApplicationMenuItem Header="Close Progect.."
                        x:Name="CloseProject"
                        ImageSource="Resources/Images/LargeIcon.png"/>
@@ -40,25 +41,21 @@
                 </RibbonApplicationMenu>
             </Ribbon.ApplicationMenu>
 
-            <RibbonTab x:Name="HomeTab"
-           Header="Home">
-                <RibbonGroup x:Name="Group1" 
-              Header="Group1">
+            <RibbonTab x:Name="HomeTab" Header="Home">
+                <RibbonGroup x:Name="Group1" Header="Group1">
                     <RibbonButton x:Name="Button1"
-                 LargeImageSource="Resources/Images/Largeicon.png"
-                 Label="Button1" />
+                        LargeImageSource="Resources/Images/Largeicon.png"
+                        Label="Button1" />
                     <RibbonButton x:Name="Button2"
-                 SmallImageSource="Resources/Images/Largeicon.png"
-                 Label="Button2" />
+                        SmallImageSource="Resources/Images/Largeicon.png"
+                        Label="Button2" />
                     <RibbonButton x:Name="Button3"
-                 SmallImageSource="Resources/Images/Smallicon.png"
-                 Label="Button3" />
+                        SmallImageSource="Resources/Images/Smallicon.png"
+                        Label="Button3" />
                     <RibbonButton x:Name="Button4"
-                 SmallImageSource="Resources/Images/Smallicon.png"
-                 Label="Button4" />
-
+                        SmallImageSource="Resources/Images/Smallicon.png"
+                        Label="Button4" />
                 </RibbonGroup>
-
             </RibbonTab>
         </Ribbon>
     </Grid>
