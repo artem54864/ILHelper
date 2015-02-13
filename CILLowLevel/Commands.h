@@ -1,5 +1,3 @@
-// CILLowLevel.h
-
 #pragma once
 
 using namespace System;
@@ -12,7 +10,7 @@ namespace CILLowLevel {
 		
 		void DisassemblePE(String^ pathToPE, String^ pathToProject);
 		
-		void ParseCILFile(String^ pathToCILFile);
+		void DecomposeCILFile(String^ pathToCILFile);
 		void BuildCILFile(String^ pathToProject);
 	};
 }

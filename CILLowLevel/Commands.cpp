@@ -1,6 +1,10 @@
 #include "stdafx.h"
 
 #include "Commands.h"
+#include <DecomposeCILFile.h>
+
+#include <msclr\marshal_cppstd.h>
+#include <string>
 
 namespace CILLowLevel {
 	
@@ -15,8 +19,12 @@ Commands::DisassemblePE(String^ pathToPE, String^ pathToProject)
 }
 
 void 
-Commands::ParseCILFile(String^ pathToCILFile)
+Commands::DecomposeCILFile(String^ pathToCILFile)
 {
+	std::string path = msclr::interop::marshal_as<std::string>(pathToCILFile);
+
+	cila::DecomposeCILFile command;
+	command.execute(path);
 }
 
 void 

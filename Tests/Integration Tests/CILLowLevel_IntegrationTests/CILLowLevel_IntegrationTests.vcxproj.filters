@@ -6,25 +6,34 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="General">
-      <UniqueIdentifier>{1f71f441-d014-49ca-a2d5-1c2ad9be9a56}</UniqueIdentifier>
+      <UniqueIdentifier>{0f2133d9-6c16-4470-8794-d405a3b19885}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h">
+    <ClCompile Include="AssemblyInfo.cpp">
       <Filter>General</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>General</Filter>
-    </ClInclude>
-    <ClInclude Include="DecomposeCILFile.h" />
-  </ItemGroup>
-  <ItemGroup>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>General</Filter>
     </ClCompile>
-    <ClCompile Include="DecomposeCILFile.cpp" />
+    <ClCompile Include="Commands_Tests.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>General</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
