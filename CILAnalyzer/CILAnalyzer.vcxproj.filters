@@ -20,11 +20,14 @@
       <Filter>General</Filter>
     </ClInclude>
     <ClInclude Include="DecomposeCILFile.h" />
+    <ClInclude Include="ICommand.h" />
+    <ClInclude Include="BuildCILFile.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>General</Filter>
     </ClCompile>
     <ClCompile Include="DecomposeCILFile.cpp" />
+    <ClCompile Include="BuildCILFile.cpp" />
   </ItemGroup>
 </Project>

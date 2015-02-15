@@ -6,31 +6,25 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="General">
-      <UniqueIdentifier>{adf3fa6c-94ed-40ef-9f7a-5d2b6d6a6f3d}</UniqueIdentifier>
+      <UniqueIdentifier>{79ddc57b-432d-4639-a610-c7f6e386ff3f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource.h">
-      <Filter>General</Filter>
-    </ClInclude>
-    <ClInclude Include="Stdafx.h">
-      <Filter>General</Filter>
-    </ClInclude>
-    <ClInclude Include="Commands.h" />
-    <ClInclude Include="ProjectSettings.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Stdafx.cpp">
-      <Filter>General</Filter>
-    </ClCompile>
     <ClCompile Include="AssemblyInfo.cpp">
       <Filter>General</Filter>
     </ClCompile>
-    <ClCompile Include="Commands.cpp" />
-    <ClCompile Include="ProjectSettings.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <Filter>General</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectSettings_Tests.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
+    <ClInclude Include="stdafx.h">
+      <Filter>General</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>General</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc">

@@ -4,7 +4,7 @@
 namespace cila
 {
 
-DecomposeCILFile::DecomposeCILFile(void)
+DecomposeCILFile::DecomposeCILFile(std::string cilFile)
 {
 }
 
@@ -13,7 +13,7 @@ DecomposeCILFile::~DecomposeCILFile(void)
 }
 
 void
-DecomposeCILFile::execute(std::string cilFile)
+DecomposeCILFile::execute()
 {
 }
 

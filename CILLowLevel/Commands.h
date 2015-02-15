@@ -1,8 +1,8 @@
 #pragma once
-
 using namespace System;
 
 namespace CILLowLevel {
+
 	public ref class Commands
 	{
 	public:
@@ -13,4 +13,5 @@ namespace CILLowLevel {
 		void DecomposeCILFile(String^ pathToCILFile);
 		void BuildCILFile(String^ pathToProject);
 	};
+
 }

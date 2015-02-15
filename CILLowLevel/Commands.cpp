@@ -23,8 +23,8 @@ Commands::DecomposeCILFile(String^ pathToCILFile)
 {
 	std::string path = msclr::interop::marshal_as<std::string>(pathToCILFile);
 
-	cila::DecomposeCILFile command;
-	command.execute(path);
+	cila::DecomposeCILFile command(path);
+	command.execute();
 }
 
 void 
