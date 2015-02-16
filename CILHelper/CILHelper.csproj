@@ -130,19 +130,30 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\Images\SmallIconOpened.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Images\Smallicon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Resources\Images\Largeicon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\CILLowLevel\CILLowLevel.vcxproj">
       <Project>{b704fc0c-6ce5-4ba1-afbe-cbb5607e280e}</Project>
       <Name>CILLowLevel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\CloseProject.png" />
+    <Resource Include="Resources\Images\NewProject.png" />
+    <Resource Include="Resources\Images\OpenProject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Help.png" />
+    <Resource Include="Resources\Images\Merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Compile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\DetailedView.png" />
+    <Resource Include="Resources\Images\Settings.png" />
+    <Resource Include="Resources\Images\SimpleView.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
