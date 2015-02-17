@@ -65,5 +65,33 @@ namespace CILLowLevel_UnitTests
 			Assert::IsTrue(settings->ILFilePath == _pathToProject + "\\" + "Excel 2013.il");
 		}
 
+		[TestMethod]
+		void ContentFolderProperty_Test()
+		{
+			ProjectSettings ^settings = gcnew ProjectSettings(_pathToProject);
+			Assert::IsTrue(settings->ContentFolder == "content");
+		}
+
+		[TestMethod]
+		void ContentFolderPathProperty_Test()
+		{
+			ProjectSettings ^settings = gcnew ProjectSettings(_pathToProject);
+			Assert::IsTrue(settings->ContentFolderPath == _pathToProject + "\\" + "content");
+		}
+
+		[TestMethod]
+		void OrderFileNameProperty_Test()
+		{
+			ProjectSettings ^settings = gcnew ProjectSettings(_pathToProject);
+			Assert::IsTrue(settings->OrderFileName == ".order");
+		}
+
+		[TestMethod]
+		void AssemblyFileNameProperty_Test()
+		{
+			ProjectSettings ^settings = gcnew ProjectSettings(_pathToProject);
+			Assert::IsTrue(settings->AssemblyFileName == ".assembly");
+		}
+
 	};
 }

@@ -22,6 +22,8 @@
     <ClInclude Include="DecomposeCILFile.h" />
     <ClInclude Include="ICommand.h" />
     <ClInclude Include="BuildCILFile.h" />
+    <ClInclude Include="DisassemblePE.h" />
+    <ClInclude Include="ImportCOMTypeLibraryToCILAssembly.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -29,5 +31,7 @@
     </ClCompile>
     <ClCompile Include="DecomposeCILFile.cpp" />
     <ClCompile Include="BuildCILFile.cpp" />
+    <ClCompile Include="DisassemblePE.cpp" />
+    <ClCompile Include="ImportCOMTypeLibraryToCILAssembly.cpp" />
   </ItemGroup>
 </Project>
