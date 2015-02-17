@@ -1,68 +1,109 @@
 ﻿<RibbonWindow x:Class="CILHelper.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="500" Width="500">
+        xmlns:p="clr-namespace:CILHelper.Properties"
+        xmlns:global="clr-namespace:"
+        Title="IlHelper" Height="500" Width="500"
+        DataContext="{Binding}">
     <Grid>
+        
         <Ribbon x:Name="Ribbon">
+            
             <Ribbon.QuickAccessToolBar>
+                
                 <RibbonQuickAccessToolBar>
+                    
                     <RibbonButton x:Name="QAOpenProject"
-                        SmallImageSource="Resources/Images/OpenProject.png"/>
+                                  SmallImageSource="Resources/Images/OpenProject.png"
+                                  Command="{Binding OpenProjectCommand}" />
+                    
                     <RibbonButton x:Name="QANewProject"
-                        SmallImageSource="Resources/Images/NewProject.png"
-                        Label="ButtonQ2" />
+                                  SmallImageSource="Resources/Images/NewProject.png"
+                                  Command="{Binding NewProjectCommand}" />
+                    
                     <RibbonButton x:Name="QACloseProject"
-                        SmallImageSource="Resources/Images/CloseProject.png"
-                        Label="ButtonQ3" />
+                                  SmallImageSource="Resources/Images/CloseProject.png"
+                                  Command="{Binding CloseProjectCommand}"/>
+                    
                 </RibbonQuickAccessToolBar>
+                
             </Ribbon.QuickAccessToolBar>
 
             <Ribbon.HelpPaneContent>
-                <RibbonButton SmallImageSource="Resources/Images/Help.png"></RibbonButton>
+                <RibbonButton SmallImageSource="Resources/Images/Help.png" Command="{Binding HelpCommand}"/>
             </Ribbon.HelpPaneContent>
+            
             <Ribbon.ApplicationMenu>
+                
                 <RibbonApplicationMenu Label="ILHelper">
-                    <RibbonApplicationMenuItem Header="New project.."
-                       x:Name="NewProject"
-                       ImageSource="Resources/Images/NewProject.png"/>
-                    <RibbonApplicationMenuItem Header="Open project.."
-                       x:Name="OpenProject"
-                       ImageSource="Resources/Images/OpenProject.png"/>
+
+                    <RibbonApplicationMenuItem Header="New Project.."
+                                               x:Name="NewProject"
+                                               ImageSource="Resources/Images/NewProject.png"
+                                               Command="{Binding NewProjectCommand}" />
+
+                    <RibbonApplicationMenuItem Header="Open Project.."
+                                               x:Name="OpenProject"
+                                               ImageSource="Resources/Images/OpenProject.png"
+                                               Command="{Binding OpenProjectCommand}" />
+                    
                     <RibbonApplicationMenuItem Header="Merge"
-                       x:Name="Merge"
-                       ImageSource="Resources/Images/Merge.png"/>
+                                               x:Name="Merge"
+                                               ImageSource="Resources/Images/Merge.png"
+                                               Command="{Binding MergeCommand}" />
+                    
+                    <!-- Need to understand how to dynamically build this menu -->
                     <RibbonApplicationSplitMenuItem
                         x:Name ="RecentProjects"
                         Header="Recent Projects..">
                         <RibbonApplicationMenuItem Header="Project 1"></RibbonApplicationMenuItem>
                     </RibbonApplicationSplitMenuItem> 
+                    
                     <RibbonApplicationMenuItem Header="Close Progect.."
-                       x:Name="CloseProject"
-                       ImageSource="Resources/Images/CloseProject.png"/>
+                                               x:Name="CloseProject"
+                                               ImageSource="Resources/Images/CloseProject.png"
+                                               Command="{Binding CloseProjectCommand}" />
+                    
                     <RibbonApplicationMenuItem Header="Exit"
-                       x:Name="Exit"
-                       ImageSource="Resources/Images/Exit.png"/>
+                                               x:Name="Exit"
+                                               ImageSource="Resources/Images/Exit.png"
+                                               Command="{Binding ExitCommand}" />
                 </RibbonApplicationMenu>
+                
             </Ribbon.ApplicationMenu>
 
             <RibbonTab x:Name="HomeTab" Header="Home">
+                
                 <RibbonGroup x:Name="HomeGroup" Header="Tools">
+                    
                     <RibbonButton x:Name="CompileButton"
-                        LargeImageSource="Resources/Images/Compile.png"
-                        Label="Compile" />
+                                  LargeImageSource="Resources/Images/Compile.png"
+                                  Label="Compile"
+                                  Command="{Binding CompileCommand}" />
+                    
                     <RibbonButton x:Name="SimpleViewButton"
-                        LargeImageSource="Resources/Images/SimpleView.png"
-                        Label="Simple view" />
+                                  LargeImageSource="Resources/Images/SimpleView.png"
+                                  Label="Simple view"
+                                  Command="{Binding ShowSimpleViewCommand}"/>
+                    
                     <RibbonButton x:Name="DetailedViewButton"
-                        LargeImageSource="Resources/Images/DetailedView.png"
-                        Label="Detailed view"/>
+                                  LargeImageSource="Resources/Images/DetailedView.png"
+                                  Label="Detailed view"
+                                  Command="{Binding ShowDetailedViewCommand}"/>
                 </RibbonGroup>
-                <RibbonGroup>
+                
+                <RibbonGroup x:Name="SettingsGroup" Header="Settings">
+                    
                     <RibbonButton x:Name="SettingsButton"
-                        LargeImageSource="Resources/Images/Settings.png"
-                        Label="Settings"/>
+                                  LargeImageSource="Resources/Images/Settings.png"
+                                  Label="Settings"
+                                  Command="{Binding ShowSettingsCommand}"/>
                 </RibbonGroup>
+                
             </RibbonTab>
+            
         </Ribbon>
+        
     </Grid>
+    
 </RibbonWindow>
